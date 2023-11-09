@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   source:
-    repoURL: https://bitbucket.int.tngtech.com/users/nolanc/my-k8s-configs/ # Replace with your Git repository URL
+    repoURL: https://github.com/chrisnolanau/my-k8s-configs.git # Replace with your Git repository URL
     targetRevision: HEAD
     path: nginx
   destination:
