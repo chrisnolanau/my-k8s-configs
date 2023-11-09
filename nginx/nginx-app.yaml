@@ -9,7 +9,7 @@ spec:
     targetRevision: HEAD
     path: nginx
   destination:
-    server: 'http://127.0.0.1:52334/' # Minikube Kubernetes API server
+    server: 'https://127.0.0.1:49673/' # Minikube Kubernetes API server
     namespace: default
   project: default
   syncPolicy:
