@@ -10,7 +10,7 @@ spec:
     path: nginx
   destination:
     server: 'https://127.0.0.1:49673/' # Minikube Kubernetes API server
-    namespace: default
+    namespace: test
   project: default
   syncPolicy:
     automated: {}
