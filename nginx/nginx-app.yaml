@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: default
+spec:
+  source:
+    repoURL: https://bitbucket.int.tngtech.com/users/nolanc/my-k8s-configs/ # Replace with your Git repository URL
+    targetRevision: HEAD
+    path: nginx
+  destination:
+    server: 'http://127.0.0.1:52334/' # Minikube Kubernetes API server
+    namespace: default
+  project: default
+  syncPolicy:
+    automated: {}
