@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-app
+  name: my-httpd-app
   namespace: test
 spec:
   source:
     repoURL: https://github.com/chrisnolanau/my-k8s-configs.git # Replace with your Git repository URL
     targetRevision: HEAD
-    path: nginx
+    path: my-httpd
   destination:
     server: 'https://127.0.0.1:49673/' # Minikube Kubernetes API server
     namespace: test
