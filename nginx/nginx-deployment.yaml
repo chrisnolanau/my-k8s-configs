@@ -19,3 +19,7 @@ spec:
           image: nginx:latest
           ports:
             - containerPort: 80
+        - name: static-web-container
+          image: nginx:alpine
+          ports:
+            - containerPort: 8080

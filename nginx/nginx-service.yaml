@@ -11,3 +11,17 @@ spec:
       port: 80
       targetPort: 80
   type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service2
+  namespace: test
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: NodePort
