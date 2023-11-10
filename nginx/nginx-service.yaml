@@ -8,6 +8,6 @@ spec:
     app: nginx
   ports:
     - protocol: TCP
-      port: 8005
+      port: 8008
       targetPort: 8008
   type: NodePort
