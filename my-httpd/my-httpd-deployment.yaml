@@ -26,5 +26,5 @@ spec:
       - name: html-volume
         # Your local path containing HTML files
         hostPath:
-          path: /Users/tngnolan/TNGTraining/Minikube/my-k8s-config/http/
+          path: /Users/tngnolan/TNGTraining/Minikube/my-k8s-config/
 
