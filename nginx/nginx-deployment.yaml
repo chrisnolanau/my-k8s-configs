@@ -22,4 +22,4 @@ spec:
         - name: static-web-container
           image: nginx:alpine
           ports:
-            - containerPort: 8080
+            - containerPort: 8800
